@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="index.css">
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>  
+    <!-- Навигационное меню -->
+    <nav>
+      <ul class="navbar">
+        <li><a href="/index.html">Главная</a></li>
+        <li><a href="/cases.html">Кейсы</a></li>
+        <li><a href="/show.html">Шоу</a></li>
+        <li><a href="/about.html">Обо мне</a></li>
+        <li><a href="/contact.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="logo-container">
+      
+  <!-- Видео с параллакс-эффектом -->
+  <section class="hero">
+    <video autoplay loop muted class="background-video">
+      <source src="background.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+    <div class="hero-content">
+      <h1>Меняю аккаунты — меняю жизни!</h1>
+      <p>Создайте успешный личный бренд с моей помощью.</p>
+      <a href="#contact" class="cta-button">Записаться на консультацию</a>
+    </div>
+  </section>
+
+  <!-- Секция "Обо мне" -->
+<section class="about-section" data-aos="fade-up">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="nazgul-photo.jpg" alt="Назгуль Дюйшеева">
+    </div>
+    <div class="about-text">
+      <h2>Обо мне</h2>
+      <p>Приветствую! Меня зовут Назгуль Дюйшеева, и я наставница по личному бренду. Моя миссия — помочь каждому, кто хочет научиться создавать и продвигать свой Instagram-блог, будь то начинающий блогер, эксперт в своей области, или предприниматель, стремящийся привлечь аудиторию через социальные сети.</p>
+      <p>Я работаю с людьми разного возраста, профессий и интересов, помогая им раскрыть свой потенциал, найти уникальный стиль и строить эффективную стратегию продвижения. Неважно, с чего вы начинаете — вместе мы создадим бренд, который будет вдохновлять и привлекать внимание.</p>
+      <p>С более чем 5-летним опытом в сфере личного брендинга, я разработала эффективные инструменты и методики, которые помогают достигать конкретных результатов. Вы получите не только знания, но и практические шаги, которые помогут превратить идеи в успешный блог.</p>
+      <p>Если вы хотите заявить о себе в Instagram, привлекать подписчиков и монетизировать свой контент, я готова стать вашим проводником на этом пути!</p>
+      <a href="#contact" class="about-btn">Начать обучение</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Секция "Мои кейсы" -->
+  <section class="cases-section" data-aos="fade-up">
+    <h2>Мои кейсы</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>100+ успешных кейсов</h3>
+        <p>Помогла клиентам достичь их целей.</p>
+      </div>
+      <div class="card">
+        <h3>1000+ участников</h3>
+        <p>Организовала масштабные курсы.</p>
+      </div>
+      <div class="card">
+        <h3>Работа с брендами</h3>
+        <p>Создаю стратегии для лидеров.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция "Отзывы клиентов" -->
+<section class="testimonials-section" data-aos="fade-up">
+  <h2>Отзывы клиентов</h2>
+  <div class="testimonials-container">
+    <div class="testimonial-card">
+      <img src="client1.jpeg" alt="Клиент 1">
+      <p>"Работа с вами изменила мой подход к бизнесу. Благодаря вашей стратегии, я увеличила доход в 2 раза!"</p>
+      <h4>Анна Петрова</h4>
+      <span>Предприниматель</span>
+    </div>
+    <div class="testimonial-card">
+      <img src="client2.jpg" alt="Клиент 2">
+      <p>"Ваша программа помогла мне найти баланс между работой и личной жизнью. Огромное спасибо!"</p>
+      <h4>Екатерина Иванова</h4>
+      <span>Мама в декрете</span>
+    </div>
+    <div class="testimonial-card">
+      <img src="client3.jpeg" alt="Клиент 3">
+      <p>"Ваши советы помогли мне создать бренд, о котором я всегда мечтала!"</p>
+      <h4>Ольга Смирнова</h4>
+      <span>Блогер</span>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Секция CTA -->
+  <section class="cta-section" data-aos="fade-up">
+    <div class="cta-content">
+      <h2>Готовы начать свой путь к успеху?</h2>
+      <a href="#contact" class="cta-button">Присоединиться</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Личный бренд. Все права защищены.</p>
+  </footer>
+
+  <!-- Подключение скриптов -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

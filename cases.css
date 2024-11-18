@@ -1,0 +1,252 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+
+/* Стили для навигационного меню */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #ff7f7f, #8d9eff);
+  transition: background 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar a:hover {
+  background: linear-gradient(135deg, #8d9eff, #ff7f7f);
+  color: white;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #ff6f61, #6c63ff);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Секция "Избранные кейсы" */
+.slideshow-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.slideshow-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  position: relative;
+}
+
+.slide.active {
+  display: block;
+  animation: fade 0.5s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.slide-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.slideshow-buttons {
+  margin-top: 20px;
+}
+
+.slideshow-buttons button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.slideshow-buttons button:hover {
+  background-color: #ff61dd;
+}
+
+.view-all-cases {
+  margin-top: 20px;
+}
+
+.view-all-cases .btn {
+  background-color: #6c63ff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.view-all-cases .btn:hover {
+  background-color: #ff61dd;
+}
+
+/* Секция "Кейсы по категориям" */
+.categories-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.categories-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.category-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.category-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.category-card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.category-card .btn {
+  background-color: #6c63ff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.category-card .btn:hover {
+  background-color: #ff6f61;
+}
+
+/* Секция отзывов */
+.testimonials-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.testimonials-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.testimonial-card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+  font-size: 18px;
+  color: #6c63ff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  color: #777;
+}

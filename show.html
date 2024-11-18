@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бизнес Мама</title>
+    <link rel="stylesheet" href="show.css">
+</head>
+<body>
+    <!-- Навигационное меню -->
+    <nav>
+        <ul class="navbar">
+          <li><a href="/index.html">Главная</a></li>
+          <li><a href="/cases.html">Кейсы</a></li>
+          <li><a href="/show.html">Шоу</a></li>
+          <li><a href="/about.html">Обо мне</a></li>
+          <li><a href="/contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <!-- Видео с параллакс-эффектом -->
+  <section class="hero">
+    <video autoplay loop muted class="background-video">
+      <source src="show.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+    </section>
+
+  <section class="business-mama-section">
+        <img src="logo.png" alt="Логотип Бизнес мама" class="business-mama-logo" />
+        <h2>Реалити-Проект</h2>
+        <p class="business-mama-text">Здесь начинается путь к финансовой независимости и самореализации. Мы поможем вам сбалансировать семью и карьеру, найти свой путь в мире онлайн-бизнеса!</p>
+        </section>
+    
+
+     
+    <section class="about-section">
+        <h2>О проекте</h2>
+        <p>7 мам из 7 регионов Кыргызстана. Новый старт, новые возможности. Вдохновляющее реалити-шоу о том, как совмещать семью и карьеру.</p>
+    </section>
+   
+    <section class="steps-section">
+        <h2>Как будет проходить шоу?</h2>
+        <ol>
+            <li>Кастинг.</li>
+            <li>Обучение и задания для участниц.</li>
+            <li>Создание успешных кейсов.</li>
+            <li>Финал с голосованием.</li>
+        </ol>
+    </section>
+   
+    <section class="form-section">
+        <h2>Форма подачи заявки</h2>
+        <form id="application-form">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+           
+            <label for="age">Возраст:</label>
+            <input type="number" id="age" name="age" required>
+           
+            <label for="region">Регион:</label>
+            <input type="text" id="region" name="region" required>
+           
+            <label for="contact">Контактные данные:</label>
+            <input type="text" id="contact" name="contact" required>
+           
+            <label for="reason">Почему вы хотите участвовать?</label>
+            <textarea id="reason" name="reason" required></textarea>
+           
+            <label for="photo">Прикрепить фото/видео:</label>
+            <input type="file" id="photo" name="photo" accept="image/*,video/*">
+           
+            <button type="submit" class="cta-button">Отправить заявку</button>
+        </form>
+    </section>  
+    
+   
+    <section class="contact-section">
+        <h2>У вас есть вопросы о кастинге?</h2>
+        <form id="question-form">
+            <label for="question-name">Имя:</label>
+            <input type="text" id="question-name" name="name" required>
+           
+            <label for="question-email">Электронная почта:</label>
+            <input type="email" id="question-email" name="email" required>
+           
+            <label for="question-text">Ваш вопрос:</label>
+            <textarea id="question-text" name="question" required></textarea>
+           
+            <button type="submit" class="cta-button">Отправить</button>
+        </form>
+    </section>
+   
+    <footer class="footer">
+        <p>© 2024 Бизнес Мама. Все права защищены.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">TikTok</a>
+        </div>
+    </footer>
+   
+    <script src="show.js"></script>
+</body>
+</html>

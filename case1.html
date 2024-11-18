@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Детали кейса</title>
+  <link rel="stylesheet" href="case1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+          <li><a href="/index.html">Главная</a></li>
+          <li><a href="/cases.html">Кейсы</a></li>
+          <li><a href="/show.html">Шоу</a></li>
+          <li><a href="/about.html">Обо мне</a></li>
+          <li><a href="/contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- Фильтр кейсов -->
+    <main>
+        <section class="filter-section">
+            <h2>Выберите кейс</h2>
+            <form id="caseFilterForm">
+                <label for="caseFilter" class="filter-label">Кейс:</label>
+                <select id="caseFilter" name="caseFilter" class="filter-select">
+                    <option value="case1">Кейс 1: Успешная кампания для бренда</option>
+                    <option value="case2">Кейс 2: Стратегия роста для блогера</option>
+                    <option value="case3">Кейс 3: Развитие экспертного бренда</option>
+                </select>
+                <button type="submit" class="btn">Применить</button>
+            </form>
+        </section>
+    
+
+        <section id="case-details">
+            <div id="case1Details">
+                <h1>Успешная кампания для бренда</h1>
+
+                <!-- Секция с информацией о клиенте и запросе -->
+                <section class="client-info">
+                    <p><strong>Клиент:</strong> Бренд XYZ</p>
+                    <p><strong>Запрос:</strong> Увеличение вовлеченности и продаж через соцсети.</p>
+                    <div class="slider">
+                        <img src="slider1.jpeg" alt="Картинка 1">
+                        <img src="slider2.jpeg" alt="Картинка 2">
+                        <img src="slider3.jpeg" alt="Картинка 3">
+                    </div>
+                </section>
+
+                <!-- Секция с методикой работы -->
+                <section class="methodology">
+                    <h2>Методика работы</h2>
+                    <div class="methodology-section">
+                        <div class="methodology-part">
+                            <h3>1. Исследование рынка</h3>
+                            <p>Проанализировали целевую аудиторию, изучили конкурентов и выявили ключевые особенности рынка.</p>
+                        </div>
+                        <div class="methodology-part">
+                            <h3>2. Создание стратегии</h3>
+                            <p>Разработали контент-стратегию, выбрали ключевые каналы для продвижения и оптимизировали контент для вовлеченности.</p>
+                        </div>
+                        <div class="methodology-part">
+                            <h3>3. Реализация</h3>
+                            <p>Запустили рекламные кампании, отслеживали эффективность и корректировали стратегию по ходу работы.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Секция с результатами -->
+                <section class="results">
+                    <h2>Результат</h2>
+                    <div class="results-content">
+                        <div class="graph">
+                            <h3>График роста вовлеченности</h3>
+                            <img src="chart.png" alt="График роста вовлеченности">
+                        </div>
+                        <div class="before-after">
+                            <div class="before-after-images">
+                                <div class="before">
+                                    <h4>До</h4>
+                                    <img src="before.jpg" alt="До">
+                                </div>
+                                <div class="after">
+                                    <h4>После</h4>
+                                    <img src="after.jpg" alt="После">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Секция с отзывом клиента -->
+                <section class="testimonial">
+                    <h2>Отзыв клиента</h2>
+                    <p>«Это была невероятная работа, наша аудитория выросла в три раза!»</p>
+                    <div class="slider">
+                        <video controls>
+                            <source src="videos/testimonial1.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+                    <a href="#contact" class="btn">Хочу такой же результат</a>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Функция для обработки фильтра
+        document.getElementById("caseFilterForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Отключаем стандартное поведение формы
+
+            // Получаем значение выбранного кейса
+            const selectedCase = document.getElementById("caseFilter").value;
+
+            // Скрываем все содержимое кейсов
+            document.getElementById("case1Details").style.display = "none"; 
+
+            // Показываем выбранный кейс
+            if (selectedCase === "case1") {
+                document.getElementById("case1Details").style.display = "block"; // Показываем кейс 1
+            }
+        });
+    </script>
+</body>
+</html>
